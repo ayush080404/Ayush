@@ -1,0 +1,42 @@
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Hidden by default */
+.error-text {
+  color: #d93025; /* Red */
+  font-size: 12px;
+  margin-top: 5px;
+  display: none; 
+}
+
+/* --- Validation States --- */
+
+/* When the input is invalid */
+input.invalid {
+  border-color: #d93025;
+}
+input.invalid + .error-text {
+  display: block; /* Show the error message */
+}
+
+/* When the input is valid */
+input.valid {
+  border-color: #188038; /* Green */
+}
