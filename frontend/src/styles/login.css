@@ -1,0 +1,150 @@
+/* ================= PAGE LAYOUT ================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f9fc;
+}
+
+/* ================= CARD ================= */
+
+.login-card {
+  width: 420px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= HEADER ================= */
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header .logo {
+  font-size: 26px;
+}
+
+.login-header h1 {
+  font-size: 26px;
+  margin: 10px 0;
+  color: #111827;
+}
+
+.login-header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* ================= FORM ================= */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* ================= INPUTS ================= */
+
+.login-form input,
+.login-form select {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background: #eef4ff;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ================= SELECT (ROLE DROPDOWN) ================= */
+
+.login-form select {
+  background: #f9fafb;
+  cursor: pointer; /* ✅ ENABLE CLICK */
+}
+
+/* ✅ Focus state */
+.login-form input:focus,
+.login-form select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ✅ Dropdown options */
+.login-form select option {
+  padding: 10px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* ✅ When dropdown opens, native scrolling appears automatically */
+.login-form select {
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+/* ================= BUTTON ================= */
+
+.login-btn {
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.login-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ================= ERROR TEXT ================= */
+
+.error-text {
+  margin-top: 10px;
+  color: #dc2626;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ================= SIGNUP LINK ================= */
+
+.signup-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.signup-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
